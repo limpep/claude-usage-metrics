@@ -1,0 +1,13 @@
+{
+  "name": "claude-usage-metrics",
+  "description": "usage-metrics: context, rate-limit and cost figures for Claude Code, as a band, toasts and a pane.",
+  "owner": {
+    "name": "Ergun Polat"
+  },
+  "plugins": [
+    {
+      "name": "usage-metrics",
+      "source": "./"
+    }
+  ]
+}

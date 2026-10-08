@@ -1,0 +1,5 @@
+node_modules/
+
+# Written by `/usage-metrics export`
+usage-metrics-history.csv
+usage-metrics-turns.csv

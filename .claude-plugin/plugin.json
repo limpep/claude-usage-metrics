@@ -1,0 +1,42 @@
+{
+  "name": "usage-metrics",
+  "version": "0.1.0",
+  "description": "A one-line band above the prompt (context fill, turn chart, rate limits with countdown and pace, cost, MCP servers), toasts when a limit is near, and a /usage-metrics pane with the breakdown, recent turns, tool results, cache share and a 30-day history; `/usage-metrics export` writes CSV.",
+  "author": {
+    "name": "Ergun Polat"
+  },
+  "repository": "https://github.com/limpep/claude-usage-metrics",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "segments": {
+      "type": "string",
+      "title": "Band segments",
+      "description": "Which segments the band shows, in order, comma-separated: context, tokens, chart, delta, limits, cost, mcp.",
+      "default": "context,tokens,chart,delta,limits,cost,mcp"
+    },
+    "warnAt": {
+      "type": "number",
+      "title": "Warn at (%)",
+      "description": "First toast when the context or a rate-limit window reaches this percentage.",
+      "default": 75
+    },
+    "criticalAt": {
+      "type": "number",
+      "title": "Critical at (%)",
+      "description": "Second toast at this percentage.",
+      "default": 90
+    },
+    "toasts": {
+      "type": "boolean",
+      "title": "Toasts",
+      "description": "Show a toast when a threshold is crossed.",
+      "default": true
+    },
+    "cacheToast": {
+      "type": "boolean",
+      "title": "Cache toast",
+      "description": "Show a toast when the session's prompt-cache share of input falls below 50%.",
+      "default": true
+    }
+  }
+}
