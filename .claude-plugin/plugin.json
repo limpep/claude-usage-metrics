@@ -6,6 +6,7 @@
     "name": "Ergun Polat"
   },
   "repository": "https://github.com/limpep/claude-usage-metrics",
+  "license": "MIT",
   "types": "./types/index.d.ts",
   "userConfig": {
     "segments": {

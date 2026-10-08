@@ -135,3 +135,7 @@ The type-check reads type files that Claude Code writes into `.claude-plugin/typ
 | `hooks/format.ts` | Formatting of tokens, durations, times, charts and CSV. |
 | `types/index.d.ts` | The shape of the state the mod keeps. |
 | `tests/*.test.ts` | The tests, one file per area; `tests/helpers.ts` holds their shared fixtures. |
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).
